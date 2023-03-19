@@ -35,32 +35,22 @@ const login = function () {
 
     console.log(acc.value, pwd.value);
 
-    acc.value = 'ffff';
+    acc.value = 'abcdefghijk';
 }
 
-
-uid.style.backgroundColor = 'red';
-
+uid.style.background = 'red';
 console.log(uid.classList);
 
-// uid.classList.add('secondary');
-// uid.classList.remove('main');
-
-
-
-const myContains = function (dom, className) {
+const myContains = function (dom, classNmae) {
     let cname = dom.className;
-    let cnameArr = cname.split(' ');
-
+    let.cnameArr = cName.split('');
     cnameArr.forEach(n => {
         if (n == className) {
-            console.log(`${className} in dom element. use function`);
+            console.log('${className) in dom element.use function');
         }
     })
 }
 
 if (uid.classList.contains('main')) {
-    console.log('main in uid element. use contains');
+    console.log('main in uid element.use ')
 }
-
-myContains(uid, 'main');
